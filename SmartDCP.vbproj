@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{99267569-29C2-464A-B3E0-1A2C5945517E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SmartDCP</RootNamespace>
+    <AssemblyName>SmartDCP</AssemblyName>
+    <TargetFrameworkVersion>v13.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>MonoAndroid</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Java.Interop">
+      <HintPath>..\..\vertex\assemblies\out\Java.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android">
+      <HintPath>..\..\vertex\assemblies\out\Mono.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot">
+      <HintPath>..\..\vertex\assemblies\out\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot.Xamarin.Android">
+      <HintPath>..\..\vertex\assemblies\out\OxyPlot.Xamarin.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\vertex\assemblies\out\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\vertex\assemblies\out\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.AppCompat">
+      <HintPath>..\..\vertex\assemblies\out\Xamarin.AndroidX.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Core">
+      <HintPath>..\..\vertex\assemblies\out\Xamarin.AndroidX.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Fragment">
+      <HintPath>..\..\vertex\assemblies\out\Xamarin.AndroidX.Fragment.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Android\EULAActivity.vb" />
+    <Compile Include="Android\MainActivity.vb" />
+    <Compile Include="Android\Platform\BluetoothLeDiscover.vb" />
+    <Compile Include="Android\Platform\BluetoothLeGattCallback.vb" />
+    <Compile Include="Android\Platform\BluetoothLeManager.vb" />
+    <Compile Include="Android\Platform\LeicaDistro.vb" />
+    <Compile Include="Android\Platform\PermissionsHelper.vb" />
+    <Compile Include="Android\Platform\Settings.vb" />
+    <Compile Include="Android\Resource.vb" />
+    <Compile Include="Android\SplashActivity.vb" />
+    <Compile Include="Android\UI\DiscoverAdapter.vb" />
+    <Compile Include="Android\UI\DiscoverFragment.vb" />
+    <Compile Include="Android\UI\TestFragment.vb" />
+    <Compile Include="Android\UI\TestListAdapter.vb" />
+    <Compile Include="Android\UI\TestListFragment.vb" />
+    <Compile Include="Android\UI\TestListState.vb" />
+    <Compile Include="Android\UI\TestPlotFragment.vb" />
+    <Compile Include="Android\UI\TestSampleAdapter.vb" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="Shared\DiscoveredRangefinder.vb" />
+    <Compile Include="Shared\IRangefinder.vb" />
+    <Compile Include="Shared\IRangefinderDiscover.vb" />
+    <Compile Include="Shared\ISettings.vb" />
+    <Compile Include="Shared\PlotBuilder.vb" />
+    <Compile Include="Shared\PlotType.vb" />
+    <Compile Include="Shared\Sample.vb" />
+    <Compile Include="Shared\Test.vb" />
+    <Compile Include="Shared\TestController.vb" />
+    <Compile Include="Shared\TestState.vb" />
+    <Compile Include="Shared\Weight.vb" />
+    <Compile Include="System\Runtime\CompilerServices\NullableAttribute.vb" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
