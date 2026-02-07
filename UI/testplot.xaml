@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:id="@id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TabWidget android:id="@android:id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/tab1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <crc6456e6f71a0b54d12a.PlotView android:id="@id/plot_view1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/tab2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <crc6456e6f71a0b54d12a.PlotView android:id="@id/plot_view2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/tab3" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <crc6456e6f71a0b54d12a.PlotView android:id="@id/plot_view3" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/test_name_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:minWidth="25.0px" android:minHeight="25.0px" android:text="Name" />
+        <EditText android:id="@id/test_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:minWidth="25.0px" android:minHeight="25.0px" android:lines="1" android:inputType="text" />
+    </LinearLayout>
+    <Spinner android:id="@id/weight_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="25.0px" android:minHeight="25.0px" />
+    <ListView android:id="@id/sample_listView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="25.0px" android:minHeight="25.0px" />
+</LinearLayout>
